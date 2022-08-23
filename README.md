@@ -1,10 +1,4 @@
-# CleoProject
-**Nombre Completo:** Tomás Bottari
-
-**Ciudad y País:** Buenos Aires, Argentina
-
-**Nombre del proyecto:** Cinema
-
+# CinemaWeb
 ## Documentación
 ### Descripción General
 Es una página donde podrás ver información sobre diferentes películas. Podrás buscar películas por su nombre utilizando el buscador
