@@ -56,6 +56,5 @@ Las funciones **getMoviesById**, **getMoviesByGenre**, y **searchMovies** funcio
 
 
 ### Vista Previa
-Link de la página: <a href="https://cleoproject.votati.repl.co/" target="_blank">Click aquí</a>
 ![preview](https://user-images.githubusercontent.com/51982229/177448618-da454019-47ce-43ea-8c26-c6d61c75825e.gif)
 
