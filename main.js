@@ -47,9 +47,8 @@ movies_container.addEventListener("click", (e) => {
 	{
 		const movieID = e.target.parentElement.parentElement.children[1].value;
 		document.body.setAttribute("style", "overflow: hidden");
-		panel.style.display = "block";
-		
 		getMovieById(movieID);
+		panel.style.display = "block";
 	}
 });
 
@@ -160,7 +159,7 @@ const getMovieById = (id) => {
 			const movieObj = movieData.data.movie;
 			let result = '';
 
-			result += `
+			result = `
 					<div>
 						<img src="${movieObj.medium_cover_image}" alt="${movieObj.title}">
 					</div>
