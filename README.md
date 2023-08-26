@@ -1,5 +1,5 @@
 # CinemaWeb
-## Documentación
+## Información
 ### Descripción General
 Es una página donde podrás ver información sobre diferentes películas. Podrás buscar películas por su nombre utilizando el buscador
 y por su género utilizando el menú de géneros.
