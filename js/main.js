@@ -8,18 +8,9 @@ const movieInfo = document.querySelector(".movie-info");
 document.addEventListener("DOMContentLoaded", function() {
     getMovies();
 
-    const gendersContainer = document.querySelector(".genders-container");
-    const gendersList = document.querySelector(".genders-list");
-
-    gendersContainer.addEventListener("mouseenter", function() {
-        gendersList.style.display = "block";
-    });
-
-    gendersContainer.addEventListener("mouseleave", function() {
-        gendersList.style.display = "none";
-    });
-
+    const gendersList = document.getElementById("genders-list");
     const genderListItems = gendersList.querySelectorAll("li");
+	
     genderListItems.forEach(function(item) {
         item.addEventListener("click", function() {
             var genderID = item.getAttribute("value");
