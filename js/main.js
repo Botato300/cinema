@@ -5,23 +5,31 @@ const panel = document.querySelector(".panel-container");
 const closeBtn = document.getElementById("close-button");
 const movieInfo = document.querySelector(".movie-info");
 
-$(document).ready(function()
-{
-	getMovies();
+document.addEventListener("DOMContentLoaded", function() {
+    getMovies();
 
-	$(".genders-container").hover(function(){
-		$(".genders-list").show();
-	}, function(){
-		$(".genders-list").hide();
-	});
+    const gendersContainer = document.querySelector(".genders-container");
+    const gendersList = document.querySelector(".genders-list");
 
-	$(".genders-list li").click(function(){
-		var genderID = $(this).attr("value")
-		getMoviesByGenre(genderID);
-	})
+    gendersContainer.addEventListener("mouseenter", function() {
+        gendersList.style.display = "block";
+    });
+
+    gendersContainer.addEventListener("mouseleave", function() {
+        gendersList.style.display = "none";
+    });
+
+    const genderListItems = gendersList.querySelectorAll("li");
+    genderListItems.forEach(function(item) {
+        item.addEventListener("click", function() {
+            var genderID = item.getAttribute("value");
+            getMoviesByGenre(genderID);
+        });
+    });
 });
 
-window.addEventListener("online", (event) => {
+
+window.addEventListener("online", () => {
 	getMovies();
 });
 
