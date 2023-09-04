@@ -6,81 +6,36 @@
 
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="icon" href="img/favicon.ico">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
 		
 		<title>Cinema - Informacion sobre peliculas</title>
 	</head>
-	<body>
-		<header class="header-container">
-			<div class="logo-container">
-				<a href="index.html">
-					<img class="logo-image" src="img/logo.png" alt="Logo del sitio web.">
-					<h1 class="logo-name">Cinema</h1>
-				</a>
+	<body class="body">
+		<header class="header">
+			<div class="header__imagotype">
+				<img src="img/logo.webp" alt="Logo de la página web" class="header__logo">
+				<h1 class="header__title">Cinema</h1>
 			</div>
-			<nav class="nav-container">
-				<ul class="nav-list">
-					<li><a href="index.html">Home</a></li>
-					<li>
-						<a href="#">Géneros</a>
-						<ul id="genders-list" class="genders-list">
-							<li value="action"><a href="#">Acción</a></li>
-							<li value="adventure"><a href="#">Aventura</a></li>
-							<li value="animation"><a href="#">Animación</a></li>
-							<li value="biography"><a href="#">Biografía</a></li>
-							<li value="comedy"><a href="#">Comedia</a></li>
-							<li value="crime"><a href="#">Crimen</a></li>
-							<li value="documentary"><a href="#">Documental</a></li>
-							<li value="drama"><a href="#">Drama</a></li>
-							<li value="family"><a href="#">Familiar</a></li>
-							<li value="fantasy"><a href="#">Fantasía</a></li>
-							<li value="film-noir"><a href="#">Cine Negro</a></li>
-							<li value="history"><a href="#">Históricas</a></li>
-							<li value="horror"><a href="#">Terror</a></li>
-							<li value="musical"><a href="#">Musical</a></li>
-							<li value="mistery"><a href="#">Misterio</a></li>
-							<li value="romance"><a href="#">Romance</a></li>
-							<li value="sci-fi"><a href="#">Ciencia Ficción</a></li>
-							<li value="short-film"><a href="#">Cortometraje</a></li>
-							<li value="sport"><a href="#">Deportes</a></li>
-							<li value="superhero"><a href="#">Superhéroes</a></li>
-							<li value="thriller"><a href="#">Suspenso</a></li>
-							<li value="war"><a href="#">Bélico</a></li>
-							<li value="western"><a href="#">Occidental</a></li>
-						</ul>
-					</li>
-					<li>
-						<form id="search">
-							<input type="submit" value="Buscar" class="search-button">
-							<input type="text" required id="search-input" class="search-input" maxlength="50" spellcheck="false" autocomplete="off" placeholder="Buscar una película...">
-						</form>
-					</li>
+
+			<nav class="nav">
+				<ul class="nav__items">
+					<li class="nav__items-item">Géneros</li>
+					<li class="nav__items-item">Próximamente</li>
 				</ul>
 			</nav>
+
+			<div class="search">
+				<input type="text" class="search__input" placeholder="Buscar una película...">
+			</div>
 		</header>
-		<main class="main-container">
-			<div class="message-container">
-				<div id="search-result"></div>
-				<div id="error"></div>
-			</div>
-			
-			<div id="movies-container" class="movies-container"></div>
-			
-			<div class="panel-container">
-				<div class="close-button" id="close-button"><span class="material-symbols-outlined">close</span></div>
-				<div class="movie-info"></div>
-			</div>
-	
+		<main class="main">
+			<section class="primary-movie">
+				<h2 class="primary-movie__title">Harry Potter y el prisionero de Azkaban</h2>
+				<img src="img/harrypotter3_cover.webp" alt="Imagen de la pelicula principal" class="primary-movie__image">
+			</section>
 		</main>
-		<footer class="footer-container">
-			<a href="#">Sobre nosotros</a>
-			<a href="#">Contacto</a>
-			<a href="#">Términos y Condiciones</a>
-			<a href="#">Políticas de privacidad</a>
-			<p>Copyright © Todos los derechos reservados.</p>
+		<footer class="footer">
+			<span>Este sitio no almacena ni descarga las peliculas que se muestran.</span>
 		</footer>
-
-		<script src="js/main.js"></script>
-
+		<!-- <script src="js/main.js"></script> -->
 	</body>
-</html>
+</html>	
