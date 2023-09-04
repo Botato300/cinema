@@ -3,7 +3,7 @@
 ### Descripción General
 Es una página donde podrás ver información sobre diferentes películas. Podrás buscar películas por su nombre utilizando el buscador
 y por su género utilizando el menú de géneros.
-Se utilizó HTML, CSS, y JavaScript para la creación de la página web, junto a la API [yts.mx](https://yts.mx/) que fue de gran ayuda
+Se utilizó HTML, CSS, y JavaScript para la creación de la página web, junto a la API [yts.mx](https://yts.mx/){:target="_blank"} que fue de gran ayuda
 para poder obtener la información de las películas.
 
 ### Vista Previa
