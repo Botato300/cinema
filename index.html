@@ -7,12 +7,15 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="icon" href="img/favicon.ico">
 		
+	
+		<script type="module" src="js/main.js"></script>
+
 		<title>Cinema - Informacion sobre peliculas</title>
 	</head>
 	<body class="body">
 		<header class="header">
 			<div class="header__imagotype">
-				<img src="img/logo.webp" alt="Logo de la página web" class="header__logo">
+				<img src="img/logo.webp" alt="Logo de la página web" class="header__logo" width="50" height="50">
 				<h1 class="header__title">Cinema</h1>
 			</div>
 
@@ -27,15 +30,15 @@
 				<input type="text" class="search__input" placeholder="Buscar una película...">
 			</div>
 		</header>
-		<main class="main">
-			<section class="primary-movie">
-				<h2 class="primary-movie__title">Harry Potter y el prisionero de Azkaban</h2>
-				<img src="img/harrypotter3_cover.webp" alt="Imagen de la pelicula principal" class="primary-movie__image">
-			</section>
+		<main id="main" class="main">
+			<span>Cargando películas...</span>
+			<!-- <section class="primary-movie">
+				<span class="primary-movie__title">Harry Potter y el prisionero de Azkaban</span>
+				<img src="img/harrypotter3_cover.webp" alt="Imagen de la pelicula principal" class="primary-movie__image" width="550" height="300">
+			</section> -->
 		</main>
 		<footer class="footer">
-			<span>Este sitio no almacena ni descarga las peliculas que se muestran.</span>
+			<span>Este sitio web no almacena ni descarga las peliculas que se muestran.</span>
 		</footer>
-		<!-- <script src="js/main.js"></script> -->
 	</body>
 </html>	

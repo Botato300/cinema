@@ -8,7 +8,7 @@ html{
 
 :root{
 	--title-color: #f1f1f1;
-	--paragraph-color: #e6e6e6;
+	--primary-text-color: #e6e6e6;
 	--primary-background-color: #0f185d;
 	--secondary-background-color: #22276f;
 	--outline-color: #5c54a3;
@@ -21,6 +21,7 @@ html{
 	min-height: 100vh;
 	font-family: system-ui, sans-serif;
 	background-color: var(--primary-background-color);
+	color: var(--primary-text-color);
 }
 
 .header{
@@ -42,10 +43,6 @@ html{
 	color: var(--title-color);
 }
 
-.header__logo{
-	width: 50px;
-}
-
 .nav{
 	flex: 1;
 	text-align: center;
@@ -60,17 +57,15 @@ html{
 .nav__items-item{
 	display: inline;
 	margin: 0 50px;
-	color: var(--paragraph-color);
 }
 
 .search{
 	background-color: var(--primary-background-color);
-	color: var(--paragraph-color);
 }
 
 .search__input{
 	background-color: var(--primary-background-color);
-	color: var(--paragraph-color);
+	color: var(--primary-text-color);
 	border: none;
 	padding: 10px;
 	width: 250px;
@@ -89,20 +84,25 @@ html{
 
 .primary-movie{
 	text-align: center;
+	/* background-image: url("https://yts.mx/assets/images/movies/harry_potter_20th_anniversary_return_to_hogwarts_2022/large-cover.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; */
 }
 
 .primary-movie__image{
-	width: 80%;
-	border-radius: 30px;
+	width: 350px;
 }
 
 .primary-movie__title{
 	color: var(--title-color);
+	display: block;
+	margin-bottom: 20px;
+	font-size: 2em;
 }
 
 .footer{
 	padding: 70px;
 	text-align: center;
-	color: var(--paragraph-color);
 	background-color: var(--secondary-background-color);
 }
