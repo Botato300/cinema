@@ -1,12 +1,14 @@
-html{
+html {
 	box-sizing: border-box;
 }
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
 	box-sizing: inherit;
 }
 
-:root{
+:root {
 	--title-color: #f1f1f1;
 	--primary-text-color: #e6e6e6;
 	--primary-background-color: #0f185d;
@@ -14,7 +16,7 @@ html{
 	--outline-color: #5c54a3;
 }
 
-.body{
+.body {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -24,46 +26,47 @@ html{
 	color: var(--primary-text-color);
 }
 
-.header{
+.header {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 0 50px;
 	background-color: var(--secondary-background-color);
 	margin-bottom: 50px;
 }
 
-.header__imagotype{
+.header__imagotype {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 }
 
-.header__title{
+.header__title {
 	color: var(--title-color);
 }
 
-.nav{
+.nav {
 	flex: 1;
 	text-align: center;
 }
 
-.nav__items{
+.nav__items {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-.nav__items-item{
+.nav__items-item {
 	display: inline;
 	margin: 0 50px;
 }
 
-.search{
+.search {
 	background-color: var(--primary-background-color);
 }
 
-.search__input{
+.search__input {
 	background-color: var(--primary-background-color);
 	color: var(--primary-text-color);
 	border: none;
@@ -72,17 +75,17 @@ html{
 	border-radius: 5px;
 }
 
-.search__input:focus{
+.search__input:focus {
 	outline: var(--outline-color) 1px solid;
 }
 
-.main{
+.main {
 	flex: 1;
 	display: flex;
 	justify-content: center;
 }
 
-.primary-movie{
+.primary-movie {
 	text-align: center;
 	/* background-image: url("https://yts.mx/assets/images/movies/harry_potter_20th_anniversary_return_to_hogwarts_2022/large-cover.jpg");
 	background-repeat: no-repeat;
@@ -90,18 +93,18 @@ html{
 	background-size: cover; */
 }
 
-.primary-movie__image{
+.primary-movie__image {
 	width: 350px;
 }
 
-.primary-movie__title{
+.primary-movie__title {
 	color: var(--title-color);
 	display: block;
 	margin-bottom: 20px;
 	font-size: 2em;
 }
 
-.footer{
+.footer {
 	padding: 70px;
 	text-align: center;
 	background-color: var(--secondary-background-color);

@@ -1,40 +1,40 @@
-import {Movie} from "./movie.js";
+import { Movie } from "./movie.js";
 
 const API_URL = "https://yts.mx/api/v2/";
 
 /**
- * Representa un gestor de peliculas, permite controlar las peliculas.
+ * Representa un gestor de peliculas, permite gestionar las peliculas.
  */
-class MovieManager{
+class MovieManager {
     #idMovie = [];
 
-    constructor(){
+    constructor() {
         console.log(`${this.constructor.name} instanciado.`);
     }
 
-    get getMovies(){
+    get getMovies() {
         return this.#idMovie;
     }
 
-    async createMovie(){
-        try{
+    async createMovie() {
+        try {
             const response = await fetch(`${API_URL}list_movies.json?query_term=harry potter`);
             const content = await response.json();
-            
-            if(content.data.movie_count <= 0) return false;
+
+            if (content.data.movie_count <= 0) return false;
 
             const arrMovies = content.data.movies;
-            for(const movie of arrMovies) {
+            for (const movie of arrMovies) {
                 this.#idMovie.push(new Movie(movie.id, movie.title, movie.genres, movie.year, movie.summary, movie.large_cover_image));
             }
-      
+
         }
-        catch(error){
-          console.error(error);
+        catch (error) {
+            console.error(error);
         }
     }
-      
+
 }
 
 
-export {MovieManager};
+export { MovieManager };
